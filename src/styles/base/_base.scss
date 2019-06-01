@@ -1,0 +1,16 @@
+html{
+    font-size: 70%;
+}
+
+body {
+    font-size: $m-size;
+    font-family: 'Audiowide', sans-serif;
+}
+
+button{
+    cursor: pointer
+}
+
+button:disabled{
+    cursor: default;
+}
