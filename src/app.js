@@ -34,10 +34,10 @@ const NotFoundPage = () => (
 const Header = () => (
     <header>
         <h1>Expensify</h1>
-        <Link to="/">Home Page </Link>
-        <Link to="/create">Create Page</Link>
-        <Link to="/edit">Edit Page</Link>
-        <Link to="/help">Help Page</Link>
+        <NavLink to="/">Home Page </NavLink>
+        <NavLink to="/create">Create Page</NavLink>
+        <NavLink to="/edit">Edit Page</NavLink>
+        <NavLink to="/help">Help Page</NavLink>
     </header>
 );
 
