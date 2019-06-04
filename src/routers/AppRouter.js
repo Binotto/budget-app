@@ -1,24 +1,24 @@
 import React from 'react';
-import {BrowserRouter, Route, Switch, Link, NavLink} from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
 
 const ExpenseDashboardPage = () => (
     <div>
-        This is from my dashboard component   
+        This is from my dashboard component
     </div>
 );
 const AddExpensePage = () => (
     <div>
-        This is from my add expense component   
+        This is from my add expense component
     </div>
 );
 const EditExpensePage = () => (
     <div>
-        This is from my edit component   
+        This is from my edit component
     </div>
 );
 const HelpPage = () => (
     <div>
-        This is from my help component   
+        This is from my help component
     </div>
 );
 
@@ -39,17 +39,17 @@ const Header = () => (
 );
 
 
-const routes = (
+const AppRouter = () => {
     <BrowserRouter>
         <div>
             <Header />
             <Switch>
-            <Route path="/" component={ExpenseDashboardPage} exact={true}/>
-            <Route path="/create" component={AddExpensePage}/>
-            <Route path="/edit" component={EditExpensePage} />
-            <Route path="/help" component={HelpPage} />
-            <Route component={NotFoundPage}/>
-            </Switch> 
-        </div>   
+                <Route path="/" component={ExpenseDashboardPage} exact={true} />
+                <Route path="/create" component={AddExpensePage} />
+                <Route path="/edit" component={EditExpensePage} />
+                <Route path="/help" component={HelpPage} />
+                <Route component={NotFoundPage} />
+            </Switch>
+        </div>
     </BrowserRouter>
-);
+};
