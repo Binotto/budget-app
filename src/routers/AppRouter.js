@@ -3,12 +3,7 @@ import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
 import ExpenseDashboardPage from '../components/ExpensedDashboardPage';
 import AddExpensePage from '../components/AddExpensePage';
 import EditExpensePage from '../components/EditExpensePage';
-
-const HelpPage = () => (
-    <div>
-        This is from my help component
-    </div>
-);
+import HelpPage from '../components/HelpPage';
 
 const NotFoundPage = () => (
     <div>
