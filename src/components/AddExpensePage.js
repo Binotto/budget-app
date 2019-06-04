@@ -5,3 +5,5 @@ const AddExpensePage = () => (
         This is from my add expense component
     </div>
 );
+
+export default AddExpensePage;
