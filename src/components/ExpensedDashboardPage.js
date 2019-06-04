@@ -5,3 +5,5 @@ const ExpenseDashboardPage = () => (
         This is from my dashboard component
     </div>
 );
+
+export default ExpenseDashboardPage;
