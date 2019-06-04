@@ -39,7 +39,7 @@ const Header = () => (
 );
 
 
-const AppRouter = () => {
+const AppRouter = () => (
     <BrowserRouter>
         <div>
             <Header />
@@ -52,6 +52,6 @@ const AppRouter = () => {
             </Switch>
         </div>
     </BrowserRouter>
-};
+);
 
 export default AppRouter;
