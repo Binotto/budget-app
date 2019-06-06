@@ -4,8 +4,9 @@ import { createStore } from 'redux';
 const store = createStore((state = { count: 0}, action) => {
     switch(action.type) {
         case 'INCREMENT':
+            const incrementBy = typeof action.incrementBy === 'number' ? action.incrementBy: 1;
             return {
-                count: state.count + 1
+                count: state.count + incrementBy
             };
         case 'DECREMENT':
             return {
@@ -25,10 +26,9 @@ const unsubscribe = store.subscribe(() => {
 })
 
 store.dispatch({
-    type: 'INCREMENT'
+    type: 'INCREMENT',
+    incrementBy: 5
 });
-
-unsubscribe();
 
 store.dispatch({
     type: 'INCREMENT'
