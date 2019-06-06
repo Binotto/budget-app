@@ -1,3 +1,6 @@
+//
+//Object Destrucuring
+//
 // const person = {
 //     name: 'Matheus Binotto',
 //     age: 25,
