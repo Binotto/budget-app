@@ -2,6 +2,8 @@
 //Array destructuring
 //
 
-const address = ['Jupiter Street', 'Philadelphia', 'Pensylvania'];
+const address = ['Jupiter Street', 'Philadelphia', 'Pensylvania', '71757274737'];
 
-console.log(`You are in ${address[0]} ${address[2]}.`);
+const [street, city, state, zip] = address;
+
+console.log(`You are in ${city} ${state}.`);
