@@ -6,7 +6,7 @@ module.exports = (env) => {
     const isProduction = env === 'production';
     return {
         mode: 'production',
-        entry: './src/app.js',
+        entry: './playground/redux-101.js',
         output:{
             path: path.join(__dirname, 'public/'),
             filename: 'bundle.js'
