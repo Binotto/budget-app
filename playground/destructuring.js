@@ -1,5 +1,4 @@
 const person = {
-    name: 'Matheus Binotto',
     age: 25,
     location: {
         city: 'Curitiba',
@@ -8,15 +7,15 @@ const person = {
 };
 
 
-const {name, age} = person;
+const {name = 'Anonymous', age} = person;
 // const name = person.name;
 // const age = person.age;
 
 console.log(`${name} is ${age}.`);
 
-const {city, temp: temperatue } = person.location;
+const {city, temp: temperature } = person.location;
 
-if(city && temperatue){
+if(city && temperature){
     console.log(`It's ${temperature} ${city}`);
 }
 
