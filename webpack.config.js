@@ -6,7 +6,7 @@ module.exports = (env) => {
     const isProduction = env === 'production';
     return {
         mode: 'production',
-        entry: './playground/destructuring.js',
+        entry: './playground/array-destructuring.js',
         output:{
             path: path.join(__dirname, 'public/'),
             filename: 'bundle.js'
