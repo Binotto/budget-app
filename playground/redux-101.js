@@ -20,11 +20,13 @@ const store = createStore((state = { count: 0}, action) => {
     }
 });
 
-console.log(store.getState());
+store.subscribe(() => {
+    console.log(store.getState());
+})
 
-//Actions - than an object that gets sent to the store
-
-//I'd like to increment the count
+store.dispatch({
+    type: 'INCREMENT'
+});
 store.dispatch({
     type: 'INCREMENT'
 });
@@ -37,8 +39,3 @@ store.dispatch({
 store.dispatch({
     type: 'RESET'
 });
-
-
-//I'd like to reset the count to zero 
-
-console.log(store.getState());
