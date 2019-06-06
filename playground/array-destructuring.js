@@ -2,8 +2,8 @@
 //Array destructuring
 //
 
-const address = ['Jupiter Street', 'Philadelphia', 'Pensylvania', '71757274737'];
+const address = [];
 
-const [, , state] = address;
+const [, , state ='New York'] = address;
 
 console.log(`You are in ${state}.`);
