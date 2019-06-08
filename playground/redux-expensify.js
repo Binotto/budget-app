@@ -38,14 +38,14 @@ const sortByAmount = () => ({
     type: 'SORT_BY_AMOUNT'
 });
 //SET_START_DATE
-const setStartDate = (startDate = '') => ({
+const setStartDate = (startDate) => ({
     type: 'SET_START_DATE',
-    date
+    startDate
 });
 //SET_END_DATE
-const setEndDate = (endDate = '') => ({
+const setEndDate = (endDate) => ({
     type: 'SET_END_DATE',
-    date
+    endDate
 });
 
 
