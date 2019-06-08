@@ -10,6 +10,15 @@ import './styles/styles.scss';
 
 const store = configureStore();
 
+store.dispatch(addExpense({description: 'Water'}));
+store.dispatch(addExpense({description: 'teste'}));
+store.dispatch(setTextFilter('teste'));
+const state = store.getState();
+const getVisibleExpenses = getVisibleExpenses(state.expenses, state.filters);
+console.log(visibleExpenses);
+
+
+
 console.log(store.getState());
 
 ReactDOM.render(<AppRouter />, document.getElementById('app'));
